@@ -1,0 +1,93 @@
+doctype html
+html(lang="ru")
+	include modules/head	
+
+	body
+		.wrapper 
+			
+			include modules/header
+			
+			main.main-section
+				.banner 
+					.container-fluid
+						.banner-content
+							h1 <span>Lorem ipsum</span> dolor sit <br/> ametconsectetur <span>adipiscing</span>
+							p At vero eos et accusamus et iusto odio dignissimos ducimus!
+							ul 
+								li Totam rem aperiam eaque ipsa
+								li Sit voluptatem accusantium doloremque laudantium
+								li Sed ut perspiciatis, unde omnis iste natus error
+							.banner-content__buttons 
+								a.button.button-blue(href="#") заказать
+								a.button.button-white(href="#") подробнее
+				.order
+					.container-fluid
+						.order-caption 
+							h2 Оформление 
+								span заказа
+							p Перед заполнением формы ознакомьтесь с нашей схемой работы!
+						.order-odds 
+							.order-odds__item 
+								.order-odds__item_icon 
+									img(src="assets/images/icon-1.svg", alt="")
+								p Lorem ipsum dolor sit amet
+							.order-odds__item 
+								.order-odds__item_icon 
+									img(src="assets/images/icon-2.svg", alt="")
+								p Сonsecteturadipiscing elit
+							.order-odds__item 
+								.order-odds__item_icon 
+									img(src="assets/images/icon-3.svg", alt="")
+								p Sed do eiusmod tempor
+							.order-odds__item 
+								.order-odds__item_icon 
+									img(src="assets/images/icon-4.svg", alt="")
+								p Esse cillum dolore eu fugiat
+							.order-odds__item 
+								.order-odds__item_icon 
+									img(src="assets/images/icon-5.svg", alt="")
+								p Excepteur sint occaecat cupidatat non proident
+						form.order-form(action="")
+							.order-form__block 
+								.order-form__block_item
+									select#type(name="type" data-search-placeholder="Выберите тип системы") 
+										option(value="")
+										option(value="") Sed ut perspiciatis  
+										option(value="") Nemo enim ipsam 
+										option(value="") Et harum quidem
+										option(value="") Temporibus autem
+										option(value="") Itaque earum rerum
+										option(value="") Nemo enim ipsam 
+										option(value="") Et harum quidem
+										option(value="") Temporibus autem
+										option(value="") Itaque earum rerum
+										option(value="") Itaque earum rerum
+										option(value="") Nemo enim ipsam 
+										option(value="") Et harum quidem
+										option(value="") Temporibus autem
+										option(value="") Itaque earum rerum
+								.order-form__block_item 
+									input.form-control(type="text" name="mail" placeholder="Ваш e-mail")
+								.order-form__block_item 
+									input.form-control(type="text" name="name" placeholder="Ваше имя")
+							.order-form__flex 
+							.order-form__act 
+								.order-form__act_slider
+									.order-form__act_slider_content
+										p Sed ut perspiciatis, unde omnis iste natus
+										p.code
+											span.example-val#slider-range-value
+											span %
+									#slider-range
+								.order-form__act_file
+									.input__wrapper 
+										input#input__file.input.input__file(type="file" name="file" multiple)
+										label(for="input__file")
+											img(src="assets/images/file.svg", alt="") 
+											span.input__file-button-text Прикрепить файл
+							button.button.button-blue(type="submit") Отправить
+								
+			include modules/footer
+
+			
+		include modules/scripts
